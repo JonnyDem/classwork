@@ -6,12 +6,13 @@ import java.util.List;
 import java.util.Map;
 
 public class MapClass {
+
     public static void main(String[] args) {
 
         new MapClass().sortList(new MapClass().buildList());
     }
-    public Map buildList(){
 
+    public Map buildList(){
         Map<Integer,Object> allList=new HashMap<>();
         for (int i = 1; i <=20 ; i++) {
             if(i<11){
@@ -19,7 +20,6 @@ public class MapClass {
             } else {
                 allList.put(i,new Project());
             }
-
         }
         System.out.println(allList.entrySet());
         return allList;
